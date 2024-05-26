@@ -1,14 +1,12 @@
 ## Hi there 👋
 
-# Fidel's GitHub Profile
-
 [![Followers](https://img.shields.io/github/followers/phantom-kali?style=social)](https://github.com/phantom-kali)
 [![GitHub stars](https://img.shields.io/github/stars/phantom-kali?style=social)](https://github.com/phantom-kali)
 [![GitHub forks](https://img.shields.io/github/forks/phantom-kali?style=social)](https://github.com/phantom-kali)
 
 ## Overview
 
-- Competitive Programmer, Can code in Java,Python,C++,Javascript
+- Competitive Programmer, Can code in Java|Python|C++|Javascript
 - Base Language Python
 - HackerRank: [Profile](https://www.hackerrank.com/profile/fideleliudclimax)
 
