@@ -19,6 +19,3 @@
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=phantom-kali&show_icons=true&theme=dark)](https://github.com/phantom-kali)
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=phantom-kali&layout=compact&theme=dark)](https://github.com/phantom-kali)
 
-
-## Most Active Repository:
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=phantom-kali&repo=repo-name&theme=dark)](https://github.com/phantom-kali/repo-name)
