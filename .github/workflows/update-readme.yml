@@ -11,7 +11,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       
       - name: Update README
         id: update-readme
@@ -23,14 +23,14 @@ jobs:
           MOST_ACTIVE_REPO=$(cat most_active_repo.txt)
           if grep -q "$MOST_ACTIVE_REPO" README.md; then
             echo "No changes needed."
-            echo "::set-output name=changed::false"
+            echo "changed=false" >> $GITHUB_ENV
           else
             sed -i "s/repo-name/$MOST_ACTIVE_REPO/g" README.md
-            echo "::set-output name=changed::true"
+            echo "changed=true" >> $GITHUB_ENV
           fi
           
       - name: Commit and push if changed
-        if: steps.update-readme.outputs.changed == 'true'
+        if: env.changed == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
