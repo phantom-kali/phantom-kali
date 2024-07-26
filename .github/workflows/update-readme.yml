@@ -14,19 +14,26 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Update README
+        id: update-readme
         run: |
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
                https://api.github.com/users/phantom-kali/repos?sort=updated \
                | jq -r '.[0].name' > most_active_repo.txt
           MOST_ACTIVE_REPO=$(cat most_active_repo.txt)
-          sed -i "s/repo-name/$MOST_ACTIVE_REPO/g" README.md
+          if grep -q "$MOST_ACTIVE_REPO" README.md; then
+            echo "No changes needed."
+            echo "::set-output name=changed::false"
+          else
+            sed -i "s/repo-name/$MOST_ACTIVE_REPO/g" README.md
+            echo "::set-output name=changed::true"
+          fi
           
       - name: Commit and push if changed
+        if: steps.update-readme.outputs.changed == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           git commit -m "Update most active repo"
-          git push
-        if: ${{ steps.update-readme.outputs.changed == 'true' }}
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
