@@ -13,27 +13,20 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Update README
-        id: update-readme
+      - name: Fetch repository details
+        id: repo-info
         run: |
+          REPO="phantom-kali/StudentConnect"
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/users/phantom-kali/repos?sort=updated \
-               | jq -r '.[0].name' > most_active_repo.txt
-          MOST_ACTIVE_REPO=$(cat most_active_repo.txt)
-          if grep -q "$MOST_ACTIVE_REPO" README.md; then
-            echo "No changes needed."
-            echo "changed=false" >> $GITHUB_ENV
-          else
-            sed -i "s/repo-name/$MOST_ACTIVE_REPO/g" README.md
-            echo "changed=true" >> $GITHUB_ENV
-          fi
+               https://api.github.com/repos/$REPO > repo_info.json
+          STARS=$(jq '.stargazers_count' repo_info.json)
+          sed -i "s/\[Stars\]: .*/\[Stars\]: $STARS/" README.md
           
       - name: Commit and push if changed
-        if: env.changed == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
-          git commit -m "Update most active repo"
+          git diff --exit-code || git commit -m "Update stars in README"
           git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
