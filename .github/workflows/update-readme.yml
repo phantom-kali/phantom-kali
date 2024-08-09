@@ -2,31 +2,34 @@ name: Update README
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  push:
-    branches:
-      - main
+    - cron: '0 0 * * *'  # Runs every day at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       
-      - name: Fetch repository details
-        id: repo-info
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
         run: |
-          REPO="phantom-kali/StudentConnect"
-          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-               -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/repos/$REPO > repo_info.json
-          STARS=$(jq '.stargazers_count' repo_info.json)
-          sed -i "s/\[Stars\]: .*/\[Stars\]: $STARS/" README.md
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: Update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python update_readme.py
           
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
           git add README.md
-          git diff --exit-code || git commit -m "Update stars in README"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update README" && git push)
