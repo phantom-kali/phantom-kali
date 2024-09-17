@@ -23,3 +23,5 @@
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=phantom-kali&layout=compact&theme=dark)](https://github.com/phantom-kali)
 
 - **HackerRank Profile:** [Profile](https://www.hackerrank.com/profile/fideleliudclimax)
+
+[![](https://visitcount.itsvg.in/api?id=phantom-kali&icon=0&color=0)](https://visitcount.itsvg.in)
