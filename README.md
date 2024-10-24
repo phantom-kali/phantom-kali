@@ -71,6 +71,9 @@
   <img src="https://github-profile-trophy.vercel.app/?username=phantom-kali&theme=darkhub&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
 </p>
 
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=phantom-kali&limit=5&theme=dark&combine_all_yearly_contributions=true)
+
 ## 🤝 Let's Connect!
 - 🌐 [Portfolio](https://jooustconnect.co.ke)
 - 📧 [Email](mailto://fideleliudclimax@gmail.com) 
