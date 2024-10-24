@@ -35,6 +35,9 @@
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![MDB](https://img.shields.io/badge/MDB-1266F1?style=for-the-badge&logo=material-design&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ### Development Tools & Environments
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -62,12 +65,13 @@
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=phantom-kali&show_icons=true&theme=dark)](https://github.com/phantom-kali)
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=phantom-kali&layout=compact&theme=dark)](https://github.com/phantom-kali)
 
-## 🏆 GitHub Activity Graph
-[![GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=phantom-kali&theme=react-dark&hide_border=true)](https://github.com/phantom-kali)
+## 🏆 GitHub Activity
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=phantom-kali&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ## 🏅 GitHub Trophies
-[![trophy](https://github-profile-trophy.vercel.app/?username=phantom-kali&theme=darkhub&row=1&column=6)](https://github.com/phantom-kali)
-
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=phantom-kali&theme=darkhub&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies" />
+</p>
 
 ## 🤝 Let's Connect!
 - 🌐 [Portfolio](https://jooustconnect.co.ke)
