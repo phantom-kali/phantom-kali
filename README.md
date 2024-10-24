@@ -62,6 +62,13 @@
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=phantom-kali&show_icons=true&theme=dark)](https://github.com/phantom-kali)
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=phantom-kali&layout=compact&theme=dark)](https://github.com/phantom-kali)
 
+## 🏆 GitHub Activity Graph
+[![GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=phantom-kali&theme=react-dark&hide_border=true)](https://github.com/phantom-kali)
+
+## 🏅 GitHub Trophies
+[![trophy](https://github-profile-trophy.vercel.app/?username=phantom-kali&theme=darkhub&row=1&column=6)](https://github.com/phantom-kali)
+
+
 ## 🤝 Let's Connect!
 - 🌐 [Portfolio](https://jooustconnect.co.ke)
 - 📧 [Email](mailto://fideleliudclimax@gmail.com) 
