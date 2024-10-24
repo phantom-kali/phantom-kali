@@ -65,8 +65,6 @@
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=phantom-kali&show_icons=true&theme=dark)](https://github.com/phantom-kali)
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=phantom-kali&layout=compact&theme=dark)](https://github.com/phantom-kali)
 
-## 🏆 GitHub Activity
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=phantom-kali&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ## 🏅 GitHub Trophies
 <p align="center">
