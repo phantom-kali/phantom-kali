@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/phantom-kali?style=social)](https://github.com/phantom-kali)
 [![Profile Views](https://visitcount.itsvg.in/api?id=phantom-kali&icon=0&color=0)](https://visitcount.itsvg.in)
 
-> Passionate Full Stack Developer and System Administrator with expertise in AI/ML and web development. Worked working as a System Administrator at [Sky Capital Cloud](https://skycapitalcloud.top) and currently contributing to [Jooust Connect](https://jooustconnect.co.ke).
+> Passionate Full Stack Developer and System Administrator with expertise in AI/ML and web development. Worked as a System Administrator at [Sky Capital Cloud](https://skycapitalcloud.top) and currently contributing to [Jooust Connect](https://jooustconnect.co.ke).
 
 ## 🎓 Certifications & Achievements
 - ✅ HackerRank Certifications:
