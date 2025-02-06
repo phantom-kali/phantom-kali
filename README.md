@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/phantom-kali?style=social)](https://github.com/phantom-kali)
 [![Profile Views](https://visitcount.itsvg.in/api?id=phantom-kali&icon=0&color=0)](https://visitcount.itsvg.in)
 
-> Passionate Full Stack Developer and System Administrator with expertise in AI/ML and web development. Worked as a System Administrator and currently contributing to [Jooust Connect](https://jooustconnect.co.ke).
+> Passionate Full Stack Developer and System Administrator with expertise in AI/ML and web development. Worked as a System Administrator and currently contributing to [TopCode](https://topcode.co.ke).
 
 ## 🎓 Certifications & Achievements
 - ✅ HackerRank Certifications:
@@ -75,7 +75,7 @@
 ![](https://github-contributor-stats.vercel.app/api?username=phantom-kali&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ## 🤝 Let's Connect!
-- 🌐 [Portfolio](https://jooustconnect.co.ke)
+- 🌐 [Portfolio](https://topcode.co.ke)
 - 📧 [Email](mailto://fideleliudclimax@gmail.com) 
 
 ---
